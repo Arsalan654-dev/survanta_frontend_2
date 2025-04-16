@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualtrics Services | Expert Guidance & Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --qualtrics-purple: #541989;
+            --qualtrics-light-purple: #f0e6f6;
+            --qualtrics-dark: #2d2d2d;
+            --qualtrics-gray: #6c757d;
+            --qualtrics-light-gray: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--qualtrics-dark);
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand img {
+            height: 30px;
+        }
+        
+        .nav-link {
+            color: var(--qualtrics-dark);
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .nav-link:hover {
+            color: var(--qualtrics-purple);
+        }
+        
+        .btn-primary {
+            background-color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary {
+            color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--qualtrics-purple);
+            color: white;
+        }
+        
+        .hero {
+            background-color: var(--qualtrics-light-purple);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero h1 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .services-section {
+            padding: 80px 0;
+        }
+        
+        .service-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-color: var(--qualtrics-light-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-img i {
+            font-size: 4rem;
+            color: var(--qualtrics-purple);
+        }
+        
+        .service-body {
+            padding: 30px;
+            background-color: white;
+        }
+        
+        .service-body h3 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 15px;
+        }
+        
+        .benefits-section {
+            background-color: var(--qualtrics-light-gray);
+            padding: 80px 0;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-item h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .testimonials-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .testimonial-card {
+            background-color: var(--qualtrics-light-gray);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--qualtrics-light-purple);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        .testimonial-role {
+            color: var(--qualtrics-gray);
+            font-size: 0.9rem;
+        }
+        
+        .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--qualtrics-gray);
+            border: none;
+        }
+        
+        .carousel-indicators button.active {
+            background-color: var(--qualtrics-purple);
+        }
+        
+        .cta-section {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        footer {
+            background-color: var(--qualtrics-dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-logo img {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        
+        .copyright {
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.qualtrics.com/m/assets/brand/wp-qualtrics-logo.svg" alt="Qualtrics">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown">Solutions</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="industriesDropdown">Industries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-primary me-2">Contact Sales</a>
+                    <a href="#" class="btn btn-primary">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Qualtrics Services</h1>
+            <p>Accelerate your XM success with expert guidance, training, and support tailored to your organization's needs.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                <a href="#" class="btn btn-outline-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="service-body">
+                            <h3>Implementation Services</h3>
+                            <p>Get up and running quickly with expert guidance to configure your XM platform for immediate impact.</p>
+                            <ul>
+                                <li>Platform configuration</li>
+                                <li>Data integration</li>
+                                <li>Workflow setup</li>
+                                <li>User training</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="service-body">
+                            <h3>Strategic Consulting</h3>
+                            <p>Develop a comprehensive XM strategy with our experienced consultants to drive business outcomes.</p>
+                            <ul>
+                                <li>Program design</li>
+                                <li>Journey mapping</li>
+                                <li>KPI development</li>
+                                <li>ROI analysis</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="service-body">
+                            <h3>Technical Support</h3>
+                            <p>Get 24/7 expert assistance to resolve technical issues and optimize your platform performance.</p>
+                            <ul>
+                                <li>Dedicated support</li>
+                                <li>Platform troubleshooting</li>
+                                <li>Best practice guidance</li>
+                                <li>System maintenance</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="service-body">
+                            <h3>Training & Certification</h3>
+                            <p>Build XM expertise across your organization with comprehensive training programs.</p>
+                            <ul>
+                                <li>Admin training</li>
+                                <li>User certification</li>
+                                <li>Custom workshops</li>
+                                <li>Ongoing education</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="service-body">
+                            <h3>Managed Services</h3>
+                            <p>Let our experts manage your XM program so you can focus on insights and action.</p>
+                            <ul>
+                                <li>Program management</li>
+                                <li>Survey deployment</li>
+                                <li>Data analysis</li>
+                                <li>Reporting services</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="service-body">
+                            <h3>Professional Services</h3>
+                            <p>Access specialized expertise for complex implementations and custom solutions.</p>
+                            <ul>
+                                <li>Custom development</li>
+                                <li>Advanced integrations</li>
+                                <li>Benchmarking studies</li>
+                                <li>Research methodology</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Qualtrics Services?</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Faster Time to Value</h4>
+                        <p>Accelerate your XM program launch and achieve results sooner with expert guidance.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>Proven Methodologies</h4>
+                        <p>Leverage best practices refined through thousands of successful implementations.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Dedicated Experts</h4>
+                        <p>Work with certified XM professionals who understand your unique challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Tailored Solutions</h4>
+                        <p>Get customized services designed for your specific industry and use cases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>Qualtrics' implementation team helped us launch our customer experience program in record time. Their expertise and guidance were invaluable in helping us avoid common pitfalls and establish best practices from day one.</p>
+                                        <div class="testimonial-author">Sarah Johnson</div>
+                                        <div class="testimonial-role">Director of Customer Experience, Global Retail</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>The strategic consulting services provided by Qualtrics transformed how we approach employee experience. Their consultants helped us identify key drivers of engagement and develop targeted interventions that improved retention by 22%.</p>
+                                        <div class="testimonial-author">Michael Chen</div>
+                                        <div class="testimonial-role">VP of HR, Technology Company</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>As a research team with limited technical resources, Qualtrics' managed services have been a game-changer. They handle all our survey programming and data collection, allowing us to focus on analysis and insights.</p>
+                                        <div class="testimonial-author">Dr. Emily Rodriguez</div>
+                                        <div class="testimonial-role">Head of Market Research, Healthcare</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to accelerate your XM success?</h2>
+            <p>Our services team is ready to help you maximize the value of your Qualtrics investment.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-light btn-lg">Get Started</a>
+                <a href="#" class="btn btn-outline-light btn-lg">Contact Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="footer-logo">
+                        <img src="https://www.qualtrics.com/m/assets/brand/wp-qualtrics-logo-white.svg" alt="Qualtrics">
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="#">XM Platform</a></li>
+                            <li><a href="#">Research Core</a></li>
+                            <li><a href="#">Customer Experience</a></li>
+                            <li><a href="#">Employee Experience</a></li>
+                            <li><a href="#">Product Experience</a></li>
+                            <li><a href="#">Brand Experience</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Training</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Legal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>© 2023 Qualtrics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize carousel with auto-rotation
+        const testimonialCarousel = new bootstrap.Carousel('#testimonialCarousel', {
+            interval: 5000,
+            pause: 'hover'
+        });
+    </script>
+</body>
+</html>
