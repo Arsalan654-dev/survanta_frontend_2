@@ -23,8 +23,8 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="./images/images.png" alt="Qualtrics">
-        </a>
+            <div class="survanta">Survanta</div>
+                </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -189,27 +189,57 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://www.qualtrics.com/m/assets/wp-homepage-hero.png" alt="Experience Management" class="hero-image img-fluid">
+                    <!-- <img src="./images/expmngmt.jpg" alt="Experience Management" class="hero-image"> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Partners Section -->
-    <section class="partners-section">
-        <div class="container">
-            <div class="text-center mb-4">
-                <p class="text-muted">TRUSTED BY THOUSANDS OF THE WORLD'S MOST INNOVATIVE BRANDS</p>
-            </div>
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-microsoft.svg" alt="Microsoft" class="partner-logo">
-                <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-adobe.svg" alt="Adobe" class="partner-logo">
-                <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-uber.svg" alt="Uber" class="partner-logo">
-                <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-airbnb.svg" alt="Airbnb" class="partner-logo">
-                <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-starbucks.svg" alt="Starbucks" class="partner-logo">
+   <!-- Partners Slider Section -->
+<section class="partners-section py-4 bg-white">
+    <div class="container">
+        <div class="text-center mb-4">
+            <p class="text-muted mb-4">TRUSTED BY THOUSANDS OF THE WORLD'S MOST INNOVATIVE BRANDS</p>
+        </div>
+        <div class="logo-slider">
+            <div class="logo-slider-track">
+                <!-- First Set -->
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-microsoft.svg" alt="Microsoft" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-adobe.svg" alt="Adobe" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-uber.svg" alt="Uber" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-airbnb.svg" alt="Airbnb" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-starbucks.svg" alt="Starbucks" class="partner-logo">
+                </div>
+                <!-- Duplicate Set for Infinite Loop -->
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-microsoft.svg" alt="Microsoft" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-adobe.svg" alt="Adobe" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-uber.svg" alt="Uber" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-airbnb.svg" alt="Airbnb" class="partner-logo">
+                </div>
+                <div class="logo-slide">
+                    <img src="https://www.qualtrics.com/m/assets/brand/wp-logo-starbucks.svg" alt="Starbucks" class="partner-logo">
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Solutions Section -->
     <section class="solutions-section">
@@ -335,61 +365,81 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="text-center mb-5">Why Customers Love Qualtrics</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <p>"Qualtrics has transformed how we understand and act on customer feedback. The insights we've gained have directly contributed to a 25% increase in customer satisfaction and a 15% boost in revenue."</p>
-                                        <div class="testimonial-author">Jennifer Martinez</div>
-                                        <div class="testimonial-role">Chief Customer Officer, Retail</div>
+   <!-- Testimonials Section -->
+<section class="testimonials-section py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #541989; font-weight: 700;">Why Customers Love Qualtrics</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="testimonial-card shadow-sm" style="background-color: white; border-radius: 10px; padding: 30px; position: relative;">
+                                <div class="testimonial-content">
+                                    <p class="fs-5" style="font-style: italic; color: #333; line-height: 1.6;">
+                                        "Qualtrics has transformed how we understand and act on customer feedback. The insights we've gained have directly contributed to a 25% increase in customer satisfaction and a 15% boost in revenue."
+                                    </p>
+                                    <div class="testimonial-author mt-4" style="font-weight: 600; color: #541989;">
+                                        Jennifer Martinez
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <p>"With Qualtrics, we've been able to create a culture of continuous feedback that has improved employee engagement scores by 30% and reduced turnover by 20% in key departments."</p>
-                                        <div class="testimonial-author">Robert Johnson</div>
-                                        <div class="testimonial-role">VP of HR, Technology</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <p>"The product research capabilities in Qualtrics have helped us reduce failed product launches by 40% by incorporating customer feedback at every stage of development."</p>
-                                        <div class="testimonial-author">Sarah Chen</div>
-                                        <div class="testimonial-role">Director of Product, Consumer Goods</div>
+                                    <div class="testimonial-role" style="color: #6c757d; font-size: 0.9rem;">
+                                        Chief Customer Officer, Retail
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-indicators mt-4">
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="testimonial-card shadow-sm" style="background-color: white; border-radius: 10px; padding: 30px; position: relative;">
+                                <div class="testimonial-content">
+                                    <p class="fs-5" style="font-style: italic; color: #333; line-height: 1.6;">
+                                        "With Qualtrics, we've been able to create a culture of continuous feedback that has improved employee engagement scores by 30% and reduced turnover by 20% in key departments."
+                                    </p>
+                                    <div class="testimonial-author mt-4" style="font-weight: 600; color: #541989;">
+                                        Robert Johnson
+                                    </div>
+                                    <div class="testimonial-role" style="color: #6c757d; font-size: 0.9rem;">
+                                        VP of HR, Technology
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="testimonial-card shadow-sm" style="background-color: white; border-radius: 10px; padding: 30px; position: relative;">
+                                <div class="testimonial-content">
+                                    <p class="fs-5" style="font-style: italic; color: #333; line-height: 1.6;">
+                                        "The product research capabilities in Qualtrics have helped us reduce failed product launches by 40% by incorporating customer feedback at every stage of development."
+                                    </p>
+                                    <div class="testimonial-author mt-4" style="font-weight: 600; color: #541989;">
+                                        Sarah Chen
+                                    </div>
+                                    <div class="testimonial-role" style="color: #6c757d; font-size: 0.9rem;">
+                                        Director of Product, Consumer Goods
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="carousel-indicators mt-4" style="position: static;">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" 
+                        style="width: 12px; height: 12px; border-radius: 50%; background-color: #541989; border: none; margin: 0 5px;"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" 
+                        style="width: 12px; height: 12px; border-radius: 50%; background-color: #d3b6e6; border: none; margin: 0 5px;"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" 
+                        style="width: 12px; height: 12px; border-radius: 50%; background-color: #d3b6e6; border: none; margin: 0 5px;"></button>
+            </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Resources Section -->
     <section class="resources-section">
         <div class="container">
@@ -453,7 +503,7 @@
             <div class="row">
                 <div class="col-lg-3 mb-4">
                     <div class="footer-logo">
-                        <img src="./images/images.png" alt="Qualtrics">
+                        <div class="survanta">Survanta</div>
                     </div>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
