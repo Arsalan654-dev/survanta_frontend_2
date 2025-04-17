@@ -1,0 +1,1550 @@
+
+        :root {
+            --qualtrics-purple: #541989;
+            --qualtrics-light-purple: #f0e6f6;
+            --qualtrics-dark: #2d2d2d;
+            --qualtrics-gray: #6c757d;
+            --qualtrics-light-gray: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--qualtrics-dark);
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand img {
+            height: 30px;
+        }
+        
+        .nav-link {
+            color: var(--qualtrics-dark);
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .nav-link:hover {
+            color: var(--qualtrics-purple);
+        }
+        
+        .btn-primary {
+            background-color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary {
+            color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--qualtrics-purple);
+            color: white;
+        }
+        
+        .hero {
+            background-color: var(--qualtrics-light-purple);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .pricing-section {
+            padding: 60px 0;
+        }
+        
+        .pricing-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-header {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .pricing-header h3 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-body {
+            padding: 30px;
+            background-color: white;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+            color: var(--qualtrics-gray);
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list i {
+            color: var(--qualtrics-purple);
+            margin-right: 10px;
+        }
+        
+        .tab-content {
+            padding: 30px 0;
+        }
+        
+        .nav-tabs .nav-link {
+            color: var(--qualtrics-gray);
+            font-weight: 600;
+            border: none;
+            padding: 12px 20px;
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: var(--qualtrics-purple);
+            border-bottom: 3px solid var(--qualtrics-purple);
+            background-color: transparent;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table th {
+            font-weight: 600;
+            color: var(--qualtrics-purple);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .check-icon {
+            color: var(--qualtrics-purple);
+        }
+        
+        .faq-section {
+            background-color: var(--qualtrics-light-gray);
+            padding: 60px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--qualtrics-purple);
+            cursor: pointer;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .faq-answer {
+            padding: 20px;
+            background-color: white;
+            border-radius: 0 0 5px 5px;
+            margin-top: -5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: none;
+        }
+        
+        .faq-answer.show {
+            display: block;
+        }
+        
+        .cta-section {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        footer {
+            background-color: var(--qualtrics-dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-logo img {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        
+        .copyright {
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .pricing-card {
+                margin-bottom: 20px;
+            }
+            
+            .nav-tabs .nav-link {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+
+        :root {
+            --qualtrics-purple: #541989;
+            --qualtrics-light-purple: #f0e6f6;
+            --qualtrics-dark: #2d2d2d;
+            --qualtrics-gray: #6c757d;
+            --qualtrics-light-gray: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--qualtrics-dark);
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand img {
+            height: 30px;
+        }
+        
+        .nav-link {
+            color: var(--qualtrics-dark);
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .nav-link:hover {
+            color: var(--qualtrics-purple);
+        }
+        
+        .btn-primary {
+            background-color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary {
+            color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--qualtrics-purple);
+            color: white;
+        }
+        
+        .hero {
+            background-color: var(--qualtrics-light-purple);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero h1 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .services-section {
+            padding: 80px 0;
+        }
+        
+        .service-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-color: var(--qualtrics-light-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-img i {
+            font-size: 4rem;
+            color: var(--qualtrics-purple);
+        }
+        
+        .service-body {
+            padding: 30px;
+            background-color: white;
+        }
+        
+        .service-body h3 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 15px;
+        }
+        
+        .benefits-section {
+            background-color: var(--qualtrics-light-gray);
+            padding: 80px 0;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-item h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .testimonials-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .testimonial-card {
+            background-color: var(--qualtrics-light-gray);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--qualtrics-light-purple);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        .testimonial-role {
+            color: var(--qualtrics-gray);
+            font-size: 0.9rem;
+        }
+        
+        .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--qualtrics-gray);
+            border: none;
+        }
+        
+        .carousel-indicators button.active {
+            background-color: var(--qualtrics-purple);
+        }
+        
+        .cta-section {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        footer {
+            background-color: var(--qualtrics-dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-logo img {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        
+        .copyright {
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        :root {
+            --qualtrics-purple: #541989;
+            --qualtrics-light-purple: #f0e6f6;
+            --qualtrics-dark: #2d2d2d;
+            --qualtrics-gray: #6c757d;
+            --qualtrics-light-gray: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--qualtrics-dark);
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand img {
+            height: 30px;
+        }
+        
+        .nav-link {
+            color: var(--qualtrics-dark);
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .nav-link:hover {
+            color: var(--qualtrics-purple);
+        }
+        
+        .btn-primary {
+            background-color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary {
+            color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--qualtrics-purple);
+            color: white;
+        }
+        
+        .hero {
+            background-color: var(--qualtrics-light-purple);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 50%;
+            height: auto;
+            z-index: 1;
+        }
+        
+        .features-section {
+            padding: 80px 0;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .use-cases-section {
+            background-color: var(--qualtrics-light-gray);
+            padding: 80px 0;
+        }
+        
+        .use-case-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .use-case-card h3 {
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .use-case-card ul {
+            padding-left: 20px;
+        }
+        
+        .use-case-card li {
+            margin-bottom: 10px;
+        }
+        
+        .research-process {
+            padding: 80px 0;
+        }
+        
+        .process-step {
+            display: flex;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+        
+        .step-number {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex-grow: 1;
+        }
+        
+        .step-content h4 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .testimonials-section {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 15px;
+        }
+        
+        .testimonial-author {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        .testimonial-role {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.5);
+            border: none;
+        }
+        
+        .carousel-indicators button.active {
+            background-color: white;
+        }
+        
+        .cta-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        footer {
+            background-color: var(--qualtrics-dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-logo img {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        
+        .copyright {
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 992px) {
+            .hero {
+                text-align: center;
+                padding: 80px 0;
+            }
+            
+            .hero-image {
+                position: static;
+                max-width: 100%;
+                margin-top: 30px;
+            }
+            
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .process-step {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        :root {
+            --qualtrics-purple: #541989;
+            --qualtrics-light-purple: #f0e6f6;
+            --qualtrics-dark: #2d2d2d;
+            --qualtrics-gray: #6c757d;
+            --qualtrics-light-gray: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--qualtrics-dark);
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand img {
+            height: 30px;
+        }
+        
+        .nav-link {
+            color: var(--qualtrics-dark);
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .nav-link:hover {
+            color: var(--qualtrics-purple);
+        }
+        
+        .btn-primary {
+            background-color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary {
+            color: var(--qualtrics-purple);
+            border-color: var(--qualtrics-purple);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--qualtrics-purple);
+            color: white;
+        }
+        
+        .hero {
+            background-color: var(--qualtrics-light-purple);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 50%;
+            height: auto;
+            z-index: 1;
+        }
+        
+        .partners-section {
+            padding: 40px 0;
+            background-color: white;
+        }
+        
+        .partner-logo {
+            height: 40px;
+            margin: 20px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        .solutions-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .solution-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .solution-img {
+            height: 200px;
+            background-color: var(--qualtrics-light-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .solution-img i {
+            font-size: 4rem;
+            color: var(--qualtrics-purple);
+        }
+        
+        .solution-body {
+            padding: 30px;
+            background-color: white;
+        }
+        
+        .solution-body h3 {
+            font-weight: 700;
+            color: var(--qualtrics-purple);
+            margin-bottom: 15px;
+        }
+        
+        .platform-section {
+            background-color: var(--qualtrics-light-gray);
+            padding: 80px 0;
+        }
+        
+        .platform-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .feature-icon {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+        
+        .feature-content {
+            flex-grow: 1;
+        }
+        
+        .feature-content h4 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .testimonials-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .testimonial-card {
+            background-color: var(--qualtrics-light-gray);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--qualtrics-light-purple);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        .testimonial-role {
+            color: var(--qualtrics-gray);
+            font-size: 0.9rem;
+        }
+        
+        .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--qualtrics-gray);
+            border: none;
+        }
+        
+        .carousel-indicators button.active {
+            background-color: var(--qualtrics-purple);
+        }
+        
+        .resources-section {
+            background-color: var(--qualtrics-light-purple);
+            padding: 80px 0;
+        }
+        
+        .resource-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        .resource-img {
+            height: 200px;
+            background-color: var(--qualtrics-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .resource-body {
+            padding: 30px;
+        }
+        
+        .resource-body h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section {
+            background-color: var(--qualtrics-purple);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        footer {
+            background-color: var(--qualtrics-dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-logo img {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        
+        .copyright {
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 992px) {
+            .hero {
+                text-align: center;
+                padding: 80px 0;
+            }
+            
+            .hero-image {
+                position: static;
+                max-width: 100%;
+                margin-top: 30px;
+            }
+            
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .platform-feature {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .feature-icon {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .partner-logo {
+                height: 30px;
+                margin: 10px;
+            }
+        }
+
+        /* Navbar Dropdown Styles */
+    .dropdown-mega {
+        position: static !important;
+    }
+    
+    .mega-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border: none;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    
+    .mega-menu .container {
+        max-width: 1200px;
+    }
+    
+    .mega-menu h5 {
+        color: var(--qualtrics-purple);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+    
+    .mega-menu .dropdown-item {
+        padding: 8px 0;
+        color: var(--qualtrics-dark);
+        font-weight: 400;
+        transition: all 0.2s;
+    }
+    
+    .mega-menu .dropdown-item:hover {
+        color: var(--qualtrics-purple);
+        background: transparent;
+        padding-left: 5px;
+    }
+    
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.5em;
+        vertical-align: 0.15em;
+        content: "";
+        border-top: 0.35em solid;
+        border-right: 0.35em solid transparent;
+        border-bottom: 0;
+        border-left: 0.35em solid transparent;
+        transition: transform 0.2s;
+    }
+    
+    .dropdown:hover .dropdown-toggle::after {
+        transform: rotate(-180deg);
+    }
+    
+    /* Navbar Hover Effects */
+    .navbar-nav .nav-link {
+        position: relative;
+    }
+    
+    .navbar-nav .nav-link:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--qualtrics-purple);
+        transition: width 0.3s;
+    }
+    
+    .navbar-nav .nav-link:hover:after,
+    .navbar-nav .nav-link.active:after {
+        width: 100%;
+    }
+    
+    /* Mobile Navbar Adjustments */
+    @media (max-width: 992px) {
+        .dropdown-mega {
+            position: relative !important;
+        }
+        
+        .mega-menu {
+            width: auto;
+            padding: 10px;
+        }
+        
+        .mega-menu .row {
+            display: block;
+        }
+        
+        .mega-menu .col-md-4,
+        .mega-menu .col-md-3 {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    /* Navbar Dropdown Styles */
+    .dropdown-arrow {
+        font-size: 0.7rem;
+        margin-left: 5px;
+        transition: transform 0.2s;
+    }
+    
+    .dropdown-toggle:not(.collapsed) .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+    
+    /* Only show dropdown arrow for dropdown items */
+    .nav-link:not(.dropdown-toggle) .dropdown-arrow {
+        display: none !important;
+    }
+    
+    /* Navbar Hover Effects */
+    .navbar-nav .nav-link {
+        position: relative;
+        padding: 0.5rem 1rem;
+    }
+    
+    .navbar-nav .nav-link:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        width: calc(100% - 2rem);
+        height: 2px;
+        background-color: var(--qualtrics-purple);
+        transform: scaleX(0);
+        transition: transform 0.3s;
+    }
+    
+    .navbar-nav .nav-link:hover:after,
+    .navbar-nav .nav-link.active:after {
+        transform: scaleX(1);
+    }
+    
+    /* Mega Menu Styles */
+    .dropdown-mega {
+        position: static !important;
+    }
+    
+    .mega-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border: none;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    
+    .mega-menu .container {
+        max-width: 1200px;
+    }
+    
+    .mega-menu h5 {
+        color: var(--qualtrics-purple);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+    
+    .dropdown-item {
+        padding: 8px 0;
+        color: var(--qualtrics-dark);
+        font-weight: 400;
+        transition: all 0.2s;
+    }
+    
+    .dropdown-item:hover {
+        color: var(--qualtrics-purple);
+        background: transparent;
+        padding-left: 5px;
+    }
+    
+    /* Mobile adjustments */
+    @media (max-width: 992px) {
+        .dropdown-mega {
+            position: relative !important;
+        }
+        
+        .mega-menu {
+            width: auto;
+            padding: 10px;
+        }
+        
+        .mega-menu .row {
+            display: block;
+        }
+        
+        .mega-menu .col-md-4,
+        .mega-menu .col-md-3 {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    /* Navbar Dropdown Styles */
+    .dropdown-toggle-icon {
+        font-size: 0.7rem;
+        margin-left: 5px;
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+    
+    .dropdown.show .dropdown-toggle-icon {
+        transform: rotate(180deg);
+    }
+    
+    /* Navbar Hover Effects */
+    .navbar-nav .nav-item {
+        position: relative;
+        margin: 0 0.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--qualtrics-purple);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s;
+    }
+    
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+        transform: scaleX(1);
+    }
+    
+    /* Mega Menu Styles */
+    .dropdown-mega {
+        position: static !important;
+    }
+    
+    .mega-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border: none;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    
+    .mega-menu .container {
+        max-width: 1200px;
+    }
+    
+    .mega-menu h5 {
+        color: var(--qualtrics-purple);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+    
+    .dropdown-item {
+        padding: 8px 0;
+        color: var(--qualtrics-dark);
+        font-weight: 400;
+        transition: all 0.2s;
+    }
+    
+    .dropdown-item:hover {
+        color: var(--qualtrics-purple);
+        background: transparent;
+        padding-left: 5px;
+    }
+    
+    /* Mobile adjustments */
+    @media (max-width: 992px) {
+        .dropdown-mega {
+            position: relative !important;
+        }
+        
+        .mega-menu {
+            width: auto;
+            padding: 10px;
+        }
+        
+        .mega-menu .row {
+            display: block;
+        }
+        
+        .mega-menu .col-md-4,
+        .mega-menu .col-md-3 {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0;
+        }
+        
+        .navbar-nav .nav-link {
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 992px) {
+        .dropdown-mega {
+            position: relative !important;
+        }
+        
+        .mega-menu {
+            width: auto;
+            padding: 10px;
+        }
+        
+        .mega-menu .row {
+            display: block;
+        }
+        
+        .mega-menu .col-md-4,
+        .mega-menu .col-md-3 {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0;
+        }
+        
+        .navbar-nav .nav-link {
+            padding: 0.5rem 1rem;
+        }
+    }
+    

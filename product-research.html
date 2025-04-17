@@ -6,332 +6,165 @@
     <title>Product Research | Qualtrics Experience Management</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --qualtrics-purple: #541989;
-            --qualtrics-light-purple: #f0e6f6;
-            --qualtrics-dark: #2d2d2d;
-            --qualtrics-gray: #6c757d;
-            --qualtrics-light-gray: #f8f9fa;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--qualtrics-dark);
-        }
-        
-        .navbar {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 15px 0;
-        }
-        
-        .navbar-brand img {
-            height: 30px;
-        }
-        
-        .nav-link {
-            color: var(--qualtrics-dark);
-            font-weight: 500;
-            margin: 0 10px;
-        }
-        
-        .nav-link:hover {
-            color: var(--qualtrics-purple);
-        }
-        
-        .btn-primary {
-            background-color: var(--qualtrics-purple);
-            border-color: var(--qualtrics-purple);
-        }
-        
-        .btn-outline-primary {
-            color: var(--qualtrics-purple);
-            border-color: var(--qualtrics-purple);
-        }
-        
-        .btn-outline-primary:hover {
-            background-color: var(--qualtrics-purple);
-            color: white;
-        }
-        
-        .hero {
-            background-color: var(--qualtrics-light-purple);
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero h1 {
-            font-weight: 700;
-            color: var(--qualtrics-purple);
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 30px;
-        }
-        
-        .hero-image {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            max-width: 50%;
-            height: auto;
-            z-index: 1;
-        }
-        
-        .features-section {
-            padding: 80px 0;
-        }
-        
-        .feature-card {
-            text-align: center;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--qualtrics-purple);
-            margin-bottom: 20px;
-        }
-        
-        .feature-card h3 {
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .use-cases-section {
-            background-color: var(--qualtrics-light-gray);
-            padding: 80px 0;
-        }
-        
-        .use-case-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-        
-        .use-case-card h3 {
-            color: var(--qualtrics-purple);
-            margin-bottom: 20px;
-        }
-        
-        .use-case-card ul {
-            padding-left: 20px;
-        }
-        
-        .use-case-card li {
-            margin-bottom: 10px;
-        }
-        
-        .research-process {
-            padding: 80px 0;
-        }
-        
-        .process-step {
-            display: flex;
-            margin-bottom: 40px;
-            align-items: center;
-        }
-        
-        .step-number {
-            background-color: var(--qualtrics-purple);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.5rem;
-            margin-right: 30px;
-            flex-shrink: 0;
-        }
-        
-        .step-content {
-            flex-grow: 1;
-        }
-        
-        .step-content h4 {
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        
-        .testimonials-section {
-            background-color: var(--qualtrics-purple);
-            color: white;
-            padding: 80px 0;
-        }
-        
-        .testimonial-card {
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 8px;
-            padding: 30px;
-            margin: 15px;
-        }
-        
-        .testimonial-author {
-            margin-top: 20px;
-            font-weight: 600;
-        }
-        
-        .testimonial-role {
-            opacity: 0.8;
-            font-size: 0.9rem;
-        }
-        
-        .carousel-indicators button {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: rgba(255,255,255,0.5);
-            border: none;
-        }
-        
-        .carousel-indicators button.active {
-            background-color: white;
-        }
-        
-        .cta-section {
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        .cta-section h2 {
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        
-        .cta-section p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        footer {
-            background-color: var(--qualtrics-dark);
-            color: white;
-            padding: 60px 0 20px;
-        }
-        
-        .footer-logo img {
-            height: 30px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-links h5 {
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #adb5bd;
-            text-decoration: none;
-        }
-        
-        .footer-links a:hover {
-            color: white;
-        }
-        
-        .social-icons a {
-            color: white;
-            font-size: 1.2rem;
-            margin-right: 15px;
-        }
-        
-        .copyright {
-            border-top: 1px solid #495057;
-            padding-top: 20px;
-            margin-top: 40px;
-            color: #adb5bd;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 992px) {
-            .hero {
-                text-align: center;
-                padding: 80px 0;
-            }
-            
-            .hero-image {
-                position: static;
-                max-width: 100%;
-                margin-top: 30px;
-            }
-            
-            .hero p {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            .process-step {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .step-number {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for the chevron icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    </head>
+    <body>
+    
+    
+    
+    
+    
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://www.qualtrics.com/m/assets/brand/wp-qualtrics-logo.svg" alt="Qualtrics">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/images.png" alt="Qualtrics">#
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown">Products</a>
+                    <!-- Products Dropdown -->
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link" href="product-research.html" id="productsDropdown">
+                            Products Research
+                            <i class="fa-solid fa-angle-down dropdown-toggle-icon" data-bs-toggle="dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu mega-menu" aria-labelledby="productsDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5>Platform</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">XM Platform</a></li>
+                                            <li><a class="dropdown-item" href="#">Research Core</a></li>
+                                            <li><a class="dropdown-item" href="#">Stats iQ</a></li>
+                                            <li><a class="dropdown-item" href="#">Text iQ</a></li>
+                                            <li><a class="dropdown-item" href="#">Driver iQ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Solutions</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Customer Experience</a></li>
+                                            <li><a class="dropdown-item" href="#">Employee Experience</a></li>
+                                            <li><a class="dropdown-item" href="#">Product Experience</a></li>
+                                            <li><a class="dropdown-item" href="#">Brand Experience</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Features</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Survey Software</a></li>
+                                            <li><a class="dropdown-item" href="#">Dashboards</a></li>
+                                            <li><a class="dropdown-item" href="#">Advanced Analytics</a></li>
+                                            <li><a class="dropdown-item" href="#">Integrations</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown">Solutions</a>
+                    
+                    <!-- Home Dropdown -->
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link" href="index.html" id="homeDropdown">
+                            Home
+                            <i class="fa-solid fa-angle-down dropdown-toggle-icon" data-bs-toggle="dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu mega-menu" aria-labelledby="homeDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5>By Role</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">HR & People Teams</a></li>
+                                            <li><a class="dropdown-item" href="#">Customer Experience</a></li>
+                                            <li><a class="dropdown-item" href="#">Market Research</a></li>
+                                            <li><a class="dropdown-item" href="#">Product Management</a></li>
+                                            <li><a class="dropdown-item" href="#">Marketing Teams</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>By Industry</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Financial Services</a></li>
+                                            <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                            <li><a class="dropdown-item" href="#">Retail</a></li>
+                                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                                            <li><a class="dropdown-item" href="#">Education</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>By Need</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Voice of Customer</a></li>
+                                            <li><a class="dropdown-item" href="#">Employee Engagement</a></li>
+                                            <li><a class="dropdown-item" href="#">Product Research</a></li>
+                                            <li><a class="dropdown-item" href="#">Brand Tracking</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="industriesDropdown">Industries</a>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link" href="services.html" id="servicesDropdown">
+                            Services
+                            <i class="fa-solid fa-angle-down dropdown-toggle-icon" data-bs-toggle="dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>Financial Services</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Banking</a></li>
+                                            <li><a class="dropdown-item" href="#">Insurance</a></li>
+                                            <li><a class="dropdown-item" href="#">Wealth Management</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Healthcare</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Providers</a></li>
+                                            <li><a class="dropdown-item" href="#">Payers</a></li>
+                                            <li><a class="dropdown-item" href="#">Pharmaceutical</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Retail & Hospitality</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Retail</a></li>
+                                            <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                                            <li><a class="dropdown-item" href="#">Travel</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Technology</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Software</a></li>
+                                            <li><a class="dropdown-item" href="#">Hardware</a></li>
+                                            <li><a class="dropdown-item" href="#">Telecom</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
+                    
+                    <!-- Simple Link (no dropdown) -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -598,7 +431,7 @@
             <div class="row">
                 <div class="col-lg-3 mb-4">
                     <div class="footer-logo">
-                        <img src="https://www.qualtrics.com/m/assets/brand/wp-qualtrics-logo-white.svg" alt="Qualtrics">
+                        <img src="./images/images.png" alt="Qualtrics">
                     </div>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -654,12 +487,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Initialize carousel with auto-rotation
-        const testimonialCarousel = new bootstrap.Carousel('#testimonialCarousel', {
-            interval: 5000,
-            pause: 'hover'
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
